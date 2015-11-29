@@ -1,6 +1,6 @@
 # Angular Async Upload
 
-It's an angular directive to perform asynchronous file uploads. It's built on top of [Ng-File-Upload](https://github.com/danialfarid/ng-file-upload) and it was created to play with [Paperclip Upload](https://github.com/platanus/paperclip_upload) gem. Even though, it's not mandatory to use RoR or Paperclip Upload. You can always mimic the server functionality.
+It's an angular directive to perform asynchronous file uploads. It's built on top of [Ng-File-Upload](https://github.com/danialfarid/ng-file-upload) and it was created to play with [Rails Pallet](https://github.com/platanus/rails_pallet) gem. Even though, it's not mandatory to use RoR or Rails Pallet. You can always mimic the server functionality.
 
 ## Installation
 
@@ -68,7 +68,7 @@ In order to work the `POST /uploads` response must be a json with the following 
   }
 }
 ```
-> [Paperclip Upload](https://github.com/platanus/paperclip_upload) solves the server side for you.
+> [Rails Pallet](https://github.com/platanus/rails_pallet) solves the server side for you.
 
 ## Directive Options:
 
