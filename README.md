@@ -1,4 +1,4 @@
-# Angular Async Upload
+# Angular Pallet
 
 It's an angular directive to perform asynchronous file uploads. It's built on top of [Ng-File-Upload](https://github.com/danialfarid/ng-file-upload) and it was created to play with [Rails Pallet](https://github.com/platanus/rails_pallet) gem. Even though, it's not mandatory to use RoR or Rails Pallet. You can always mimic the server functionality.
 
@@ -6,16 +6,16 @@ It's an angular directive to perform asynchronous file uploads. It's built on to
 
 ```bash
 bower install ng-file-upload --save
-bower install https://github.com/platanus/angular-async-upload --save
+bower install https://github.com/platanus/angular-pallet --save
 ```
 
 Include the JS files in your project and the library as an Angular Dependency
 
 ```javascript
-angular.module('yourapp', ['platanus.asyncUpload']);
+angular.module('yourapp', ['platanus.pallet']);
 ```
 
-> The library comes with a proposed stylesheet under `/dist/angular-async-upload.css`. You can use it or
+> The library comes with a proposed stylesheet under `/dist/angular-pallet.css`. You can use it or
 > create your own.
 
 ## Usage
@@ -42,13 +42,13 @@ So, to achieve this, we can use the Async Upload Directive
 This directive allows you to perform a `POST` to a given endpoint (`/uploads` on this example) with a file. The url must return a file identifier. This identifier (that represents the uploaded file), will be stored inside an attribute (`user.avatarIdentifier` or `user.fileIdentifier`) passed to the `ng-model`.
 
 ```html
-<async-upload
+<pallet-file-selector
   upload-url="uploads"
   button-label="Select Avatar..."
   ng-model="user.avatarIdentifier">
-</async-upload>
+</pallet-file-selector>
 
-<async-upload
+<pallet-file-selector
   upload-url="api/uploads"
   start-callback="startCallback(file)"
   success-callback="successCallback(uploadData)"
@@ -56,7 +56,7 @@ This directive allows you to perform a `POST` to a given endpoint (`/uploads` on
   error-callback="errorCallback(errorData)"
   remove-callback="removeCallback()"
   ng-model="user.fileIdentifier">
-</async-upload>
+</pallet-file-selector>
 ```
 
 In order to work the `POST /uploads` response must be a json with the following format:
@@ -99,12 +99,12 @@ In order to work the `POST /uploads` response must be a json with the following 
 
 ## Credits
 
-Thank you [contributors](https://github.com/platanus/angular-async-upload/graphs/contributors)!
+Thank you [contributors](https://github.com/platanus/angular-pallet/graphs/contributors)!
 
 <img src="http://platan.us/gravatar_with_text.png" alt="Platanus" width="250"/>
 
-angular-async-upload is maintained by [platanus](http://platan.us).
+angular-pallet is maintained by [platanus](http://platan.us).
 
 ## License
 
-angular-async-upload is © 2015 platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.
+angular-pallet is © 2015 platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.

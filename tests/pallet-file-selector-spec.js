@@ -1,9 +1,9 @@
 ngDescribe({
   name: 'Async upload directive',
-  modules: 'platanus.asyncUpload',
+  modules: 'platanus.pallet',
   inject: ['Upload'],
   element:
-    '<async-upload ' +
+    '<pallet-file-selector ' +
       'button-label="Upload please" ' +
       'start-callback="onStart()" ' +
       'success-callback="setUploadData(uploadData)" ' +
@@ -11,7 +11,7 @@ ngDescribe({
       'error-callback="setError(errorData)" ' +
       'upload-url="uploads" ' +
       'ng-model="user.uploadIdentifier">' +
-    '</async-upload>',
+    '</pallet-file-selector>',
 
   tests: function (deps) {
     describe('loading a file', function(){
@@ -140,10 +140,10 @@ ngDescribe({
 
 ngDescribe({
   name: 'Async upload directive with multiple attribute present',
-  modules: 'platanus.asyncUpload',
+  modules: 'platanus.pallet',
   inject: ['Upload'],
   element:
-    '<async-upload ' +
+    '<pallet-file-selector ' +
       'multiple="true" ' +
       'init-callback="onInit()" ' +
       'start-callback="onStart()" ' +
@@ -152,7 +152,7 @@ ngDescribe({
       'done-callback="onDone()" ' +
       'upload-url="uploads" ' +
       'ng-model="user.uploadIdentifiers">' +
-    '</async-upload>',
+    '</pallet-file-selector>',
 
   tests: function (deps) {
     describe('loading multiple files', function(){

@@ -1,7 +1,7 @@
 {
-  "name": "angular-async-upload",
+  "name": "angular-pallet",
   "version": "1.1.0",
-  "homepage": "https://github.com/platanus/angular-async-upload",
+  "homepage": "https://github.com/platanus/angular-pallet",
   "description": "directive to perform asynchronous file uploads",
   "authors": [
     "Platanus",
@@ -9,9 +9,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/platanus/angular-async-upload.git"
+    "url": "https://github.com/platanus/angular-pallet.git"
   },
-  "main": "./dist/angular-async-upload.min.js",
+  "main": "./dist/angular-pallet.min.js",
   "license": "MIT",
   "ignore": [
     "**/.*",

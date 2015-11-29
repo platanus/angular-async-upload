@@ -18,8 +18,8 @@ var paths = {
   dist: ['./dist/*.js']
 };
 
-var sourceMin = 'angular-async-upload.min.js';
-var source = 'angular-async-upload.js';
+var sourceMin = 'angular-pallet.min.js';
+var source = 'angular-pallet.js';
 
 gulp.task('js-lint', function() {
   return gulp.src(paths.src)

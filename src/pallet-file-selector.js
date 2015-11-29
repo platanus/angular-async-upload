@@ -1,13 +1,13 @@
 (function(){
 
 angular
-  .module('platanus.asyncUpload')
-  .directive('asyncUpload', asyncUpload);
+  .module('platanus.pallet')
+  .directive('palletFileSelector', palletFileSelector);
 
-function asyncUpload(Upload, trashIcon) {
+function palletFileSelector(Upload, trashIcon) {
   var directive = {
     template:
-      '<div class="async-upload">' +
+      '<div class="pallet-file-selector">' +
         '<div class="upload-btn" ' +
           'ngf-change="upload($files)" ' +
           'ngf-select ' +
@@ -164,6 +164,6 @@ function asyncUpload(Upload, trashIcon) {
   }
 }
 
-asyncUpload.$inject = ['Upload', 'trashIcon'];
+palletFileSelector.$inject = ['Upload', 'trashIcon'];
 
 })();
